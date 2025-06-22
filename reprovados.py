@@ -49,13 +49,19 @@ with open(csv_path, newline='', encoding='utf-8') as csvfile:
         mensagem = f"""
 Olá {nome},
 
+Agradecemos sinceramente pelo seu interesse em participar do nosso Processo Seletivo.
+
+Após uma análise cuidadosa, infelizmente, você não seguirá para as próximas etapas do processo seletivo. Este resultado não define sua trajetória e não fecha as portas de nossa rede para uma outra oportunidade. Por isso, gostaríamos de te dar esse feedback sobre sua inscrição para que você entenda melhor a nossa decisão e possa, se fizer sentido para você, analisar esses pontos. 
+
 {descricao}
 
+Mais uma vez, agradecemos o seu interesse e desejamos sucesso na sua jornada pessoal, acadêmica e profissional. Esperamos ter a oportunidade de nos encontrarmos novamente.
+
 Atenciosamente,
-Equipe do Processo Seletivo 2025
+LSEC - Liga de Segurança Cibernética
 """
 
         # Criar e enviar o e-mail
-        message = create_message(email, "RESULTADO- fase 1 - LSEC", mensagem)
+        message = create_message(email, "LSEC - Resultado da Primeira Fase", mensagem)
         send_message(service, message)
         print(f"E-mail enviado para {nome} - {email}")
