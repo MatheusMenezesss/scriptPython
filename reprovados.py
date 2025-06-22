@@ -41,7 +41,7 @@ service = gmail_service()
 with open(csv_path, newline='', encoding='utf-8') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        nome = row['Nome'].strip()
+        nome = row['Nome'].strip().split()[0]
         email = row['Email'].strip()
         descricao = row['Descrição'].strip()
 
