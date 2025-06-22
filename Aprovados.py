@@ -47,12 +47,23 @@ with open(csv_path, newline='', encoding='utf-8') as csvfile:
 
         # Corpo do e-mail personalizado
         mensagem = f"""
-Olá {nome},
+Olá, {nome}!
 
-{descricao}
+Parabéns, você passou para a segunda fase do Processo Seletivo da LSEC 2025!!
 
-Atenciosamente,
-Equipe do Processo Seletivo 2025
+Nesta próxima etapa, você participará em um trabalho em grupo que terá início na quarta-feira dia 25/06, após o feriado de São João.
+Já no dia 25/06 às 10:30, teremos a reunião de apresentação do nosso processo seletivo, onde vamos explicar mais detalhadamente o que deve ser feito na segunda etapa.
+
+Para você marcar no calendário, aqui estão as informações sobre a reunião de apresentação do PS:
+📅 Data: 25/06 (quarta-feira)
+🕒 Horário: 10:30
+📍 Local: Google Meet
+⏳ Duração estimada: 1h
+
+Por agora, você precisa entrar no discord do PS para mais direcionamentos: https://discord.gg/K659ZGPb
+Caso tenha qualquer dúvida, estamos à disposição.
+
+Aguardamos você!
 """
 
         # Criar e enviar o e-mail
